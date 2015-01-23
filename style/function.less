@@ -1,0 +1,103 @@
+.marg(@x1:0,@y1:0,@x2:0,@y2:0){	
+	 margin-top:@x1;
+	 margin-right:@y1;
+	 margin-bottom:@x2;
+	 margin-left:@y2;
+}
+.padd(@x1:0,@y1:0,@x2:0,@y2:0){
+	 padding-top:@x1;
+	 padding-right:@y1;
+	 padding-bottom:@x2;
+	 padding-left:@y2;
+}
+.font(@font-size:14px,@weight:normal,@color:@color666){ 
+	 font-size: @font-size;
+	 font-weight: @weight;
+	 color: @color;
+}
+.widthHeight(@width:@primary_width,@height: auto){
+	width: @width;
+	height: @height;
+}
+.backimage (@url,@repeat,@x:0,@y:0) {
+	 background-image: @url; 
+	 background-repeat: @repeat;
+	 background-position: @x @y;
+}
+.Lheight(@height:@index-height){ 
+	height: @height; 
+	line-height: @height;
+}
+.text-indent(@num:-9999px){
+	text-indent: @num;
+}
+#namespace{
+	.samepage{
+		 width:@primary_width; 
+		 margin:0 auto; 
+		 overflow:hidden;
+	}
+	.samebox{
+		 display:block; 
+		 width:44px; 
+		 .Lheight(44px);
+		 color:@color333;
+	}
+	.samelabel{
+		 float:left; 
+		 width:84px; 
+		 .Lheight;
+		 margin-right:21px;
+		 text-align:right;
+	}
+	.sameborder{
+		 float:left;
+		 width:auto; 
+	 	 .Lheight(40px); 
+	 	 border:@color-border 1px solid; 
+	 	 background:@colorwhite; 
+	 	 .font(14px,normal,@color666);
+	}
+	.errortips{
+		width: 260px;
+	 	color:@color-red;
+	 	.Lheight;
+	 	.backimage(@tips_img,no-repeat,left,center);
+	 	.padd(0,0,0,20px);
+	 	.marg(0,0,0,20px);
+	 	overflow: hidden;
+	}
+}
+.button(@display:block,@width:0,@align:center,@text-decoration:none,@cursor:pointer,@border:none){
+	display: @display;
+	width: @width;
+	text-align: @align;
+	text-decoration: @text-decoration;
+	cursor: @cursor;
+	border: @border;
+}
+.btn145{
+	.button(inline-block,145px,center,none);
+	.Lheight;
+	.font(18px,normal,@colorwhite);
+	.backimage(@btn_img,no-repeat,0,-110px);
+	font-family: @font_yahei;
+	&:hover{
+		.backimage(@btn_img,no-repeat,0,-154px);
+	}
+	&:active{
+		.backimage(@btn_img,no-repeat,0,-198px);
+	}
+}
+.btn98{
+	.button(inline-block,98px,center,none);
+	.Lheight(35px);
+	.font(12px,normal,@color-blue);
+	.backimage(@btn_img,no-repeat,0,0);
+	&:hover{
+		.backimage(@btn_img,no-repeat,0,-36px);
+	}
+	&:active{
+		.backimage(@btn_img,no-repeat,0,-72px);
+	}
+}

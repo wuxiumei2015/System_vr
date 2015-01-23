@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>基本信息</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="description" content="" />
+  <meta http-equiv="keywords" content="" />
+  <link rel="stylesheet" type="text/css" href="../style/style.min.css" />
+</head>
+
+<body>
+  <div class="register-container">
+    <!--top-start-->
+    <div class="register-location">
+      <dl class="location">
+        <dt>
+          <span>1</span>
+        </dt>
+        <dd>基本信息</dd>
+      </dl>
+      <dl>
+        <dt>
+          <span>2</span>
+        </dt>
+        <dd>邮箱验证</dd>
+      </dl>
+      <dl>
+        <dt>
+          <span>3</span>
+        </dt>
+        <dd>资质证明</dd>
+      </dl>
+      <dl>
+        <dt>
+          <span>4</span>
+        </dt>
+        <dd>等待审核</dd>
+      </dl>
+      <dl>
+        <dt>
+          <span>5</span>
+        </dt>
+        <dd>注册成功</dd>
+      </dl>
+    </div>
+    <!--top-end-->
+    <!--main-start-->
+    <div class="register-page">
+      <div class="basic-group">
+        <h3>开发者类型：</h3>
+        <ul class="basic-title">
+          <li class="current">
+            <a href="javascript:void()">个人</a>
+          </li>
+          <li>
+            <a href="javascript:void()">公司</a>
+          </li>
+        </ul>
+      </div>
+      <div class="basic-info">
+        <!--个人-start-->
+        <form name="personal" action="" method="post">
+          <ul>
+            <li>
+              <label for="name">开发者名称：</label>
+              <input type="text" name="name" id="name" value="">
+              <div class="normal-tips" style="display:none;">
+                <div class="sub-tips">
+                  <div class="tips">请填写开发者姓名，需与身份证姓名一致</div>
+                </div>
+              </div>
+              <span class="error-tips">该项不能为空</span>
+            </li>
+            <li>
+              <label>联系地址：</label>
+              <select name="provinces">
+                <option>省份/直辖市</option>
+                <option>北京</option>
+                <option>杭州</option>
+                <option>上海</option>
+              </select>
+              <select name="city" class="mar-lt22">
+                <option>市/区</option>
+                <option>海淀</option>
+                <option>东城</option>
+                <option>朝阳</option>
+              </select>
+              <select name="area" class="mar-lt22">
+                <option>县/区</option>
+                <option>海淀</option>
+                <option>东城</option>
+                <option>朝阳</option>
+              </select>
+              <div class="normal-tips">
+                <div class="sub-tips">
+                  <div class="tips">请填您所在地区</div>
+                </div>
+              </div>
+              <span class="error-tips">请填您所在地区</span>
+            </li>
+            <li>
+              <label>&nbsp;</label>
+              <input type="text" name="address" id="address" value="">
+              <div class="normal-tips">
+                <div class="sub-tips">
+                  <div class="tips">请填写有效的详细地址，方便平台联系开发者，回寄实物（如纸质协议等）</div>
+                </div>
+              </div>
+              <span class="error-tips">该项不能为空</span>
+            </li>
+            <li>
+              <label for="phone">联系电话：</label>
+              <input type="text" name="phone" id="phone" value="">
+              <div class="normal-tips">
+                <div class="sub-tips">
+                  <div class="tips">请填写可以联系到您的手机或座机（座机请填写区号，如010-62309066）</div>
+                </div>
+              </div>
+              <span class="error-tips">该项不能为空</span>
+            </li>
+            <li>
+              <label for="name">常用邮箱：</label>
+              <input type="text" name="name" id="name" value="">
+              <div class="normal-tips">
+                <div class="sub-tips">
+                  <div class="tips">请填请填写您的常用邮箱，平台将以邮件通知信息给您，稍后会进行邮箱验证</div>
+                </div>
+              </div>
+              <span class="error-tips">该项不能为空</span>
+            </li>
+            <li>
+              <label for="pcid">个人身份证件：</label>
+              <select name="pcid" id="pcid">
+                <option>身份证</option>
+                <option>军人证</option>
+              </select>
+            </li>
+            <li>
+              <label for="id-num">&nbsp;</label>
+              <input type="text" name="id-num" id="id-num" value="">
+              <div class="normal-tips">
+                <div class="sub-tips">
+                  <div class="tips">请正确填写18位身份证号或护照的证件号</div>
+                </div>
+              </div>
+              <span class="error-tips">该项不能为空</span>
+            </li>
+            <li class="accept">
+              <label>&nbsp;</label>
+              <input type="checkbox">
+              我同意接受
+              <a href="#" target="_blank">《魔镜开放平台开发者协议》</a>
+              <span class="error-tips">该项不能为空</span>
+            </li>
+            <li>
+              <label>&nbsp;</label>
+              <input type="submit" value="注册" class="register-btn"></li>
+          </ul>
+        </form>
+        <!---个人-end-->
+        <!--公司-start-->
+        <form name="company" action="" method="post">
+          <ul>
+            <li>
+              <label for="name">开发者名称：</label>
+              <input type="text" name="name" id="name" value="">
+              <div class="normal-tips">
+                <div class="sub-tips">
+                  <div class="tips">请填写开发者姓名，需与身份证姓名一致</div>
+                </div>
+              </div>
+              <span class="error-tips">该项不能为空</span>
+            </li>
+            <li>
+              <label>开发公司全称：</label>
+              <input type="text" name="address" id="address" value="">
+              <div class="normal-tips">
+                <div class="sub-tips">
+                  <div class="tips">请正确填写开发公司全称，需与营业执照合法的公司一致</div>
+                </div>
+              </div>
+              <span class="error-tips">该项不能为空</span>
+            </li>
+            <li>
+              <label>营业执照号码：</label>
+              <input type="text" name="address" id="address" value="">
+              <div class="normal-tips">
+                <div class="sub-tips">
+                  <div class="tips">请正确填写营业执照号码</div>
+                </div>
+              </div>
+              <span class="error-tips">该项不能为空</span>
+            </li>
+            <li>
+              <label>组织机构代码：</label>
+              <input type="text" name="address" id="address" value="">
+              <div class="normal-tips">
+                <div class="sub-tips">
+                  <div class="tips">请正确填写组织机构代码</div>
+                </div>
+              </div>
+              <span class="error-tips">该项不能为空</span>
+            </li>
+            <li>
+              <label>公司地址：</label>
+              <select name="provinces">
+                <option>省份/直辖市</option>
+                <option>北京</option>
+                <option>杭州</option>
+                <option>上海</option>
+              </select>
+              <select name="city" class="mar-lt22">
+                <option>市/区</option>
+                <option>海淀</option>
+                <option>东城</option>
+                <option>朝阳</option>
+              </select>
+              <select name="area" class="mar-lt22">
+                <option>县/区</option>
+                <option>海淀</option>
+                <option>东城</option>
+                <option>朝阳</option>
+              </select>
+              <div class="normal-tips" style="display:none;">
+                <div class="sub-tips">
+                  <div class="tips">请填您所在地区</div>
+                </div>
+              </div>
+              <span class="error-tips">请填您所在地区</span>
+            </li>
+            <li>
+              <label>&nbsp;</label>
+              <input type="text" name="address" id="address" value="">
+              <div class="normal-tips">
+                <div class="sub-tips">
+                  <div class="tips">请填写有效的详细地址，方便平台联系开发者，回寄实物（如纸质协议等）</div>
+                </div>
+              </div>
+              <span class="error-tips">该项不能为空</span>
+            </li>
+            <li>
+              <label for="name">联系人姓名：</label>
+              <input type="text" name="name" id="name" value="">
+              <div class="normal-tips">
+                <div class="sub-tips">
+                  <div class="tips">请填写公司负责人姓名，方便平台联系开发者公司，沟通协商等</div>
+                </div>
+              </div>
+              <span class="error-tips">该项不能为空</span>
+            </li>
+            <li>
+              <label for="phone">联系电话：</label>
+              <input type="text" name="phone" id="phone" value="">
+              <div class="normal-tips">
+                <div class="sub-tips">
+                  <div class="tips">请填写可以联系到您的手机或座机（座机请填写区号，如010-62309066）</div>
+                </div>
+              </div>
+              <span class="error-tips">该项不能为空</span>
+            </li>
+            <li>
+              <label for="name">常用邮箱：</label>
+              <input type="text" name="name" id="name" value="">
+              <div class="normal-tips">
+                <div class="sub-tips">
+                  <div class="tips">请填请填写您的常用邮箱，平台将以邮件通知信息给您，稍后会进行邮箱验证</div>
+                </div>
+              </div>
+              <span class="error-tips">该项不能为空</span>
+            </li>
+            <li class="accept">
+              <label>&nbsp;</label>
+              <input type="checkbox">
+              我同意接受
+              <a href="#" target="_blank">《魔镜开放平台开发者协议》</a>
+            </li>
+            <li>
+              <label>&nbsp;</label>
+              <input type="submit" value="注册" class="register-btn"></li>
+          </ul>
+        </form>
+        <!--公司-end--> </div>
+    </div>
+    <!--main-end--> </div>
+</body>
+</html>
